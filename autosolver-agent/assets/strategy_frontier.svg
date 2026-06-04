@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="820" viewBox="0 0 1600 820">
+  <defs>
+    <linearGradient id="bg3" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#09111f"/>
+      <stop offset="1" stop-color="#1f2937"/>
+    </linearGradient>
+    <style>
+      .title{font:700 44px Inter,Segoe UI,Arial,sans-serif;fill:#f8fafc}
+      .axis{stroke:#94a3b8;stroke-width:2}
+      .grid{stroke:#334155;stroke-width:1}
+      .label{font:400 18px Inter,Segoe UI,Arial,sans-serif;fill:#cbd5e1}
+      .pointLabel{font:700 17px Inter,Segoe UI,Arial,sans-serif;fill:#e5e7eb}
+    </style>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1600" height="820" fill="url(#bg3)"/>
+  <text x="90" y="82" class="title">Strategy Frontier: Quality Under a 10s Budget</text>
+  <g transform="translate(180,140)">
+    <line x1="0" y1="560" x2="1180" y2="560" class="axis"/>
+    <line x1="0" y1="0" x2="0" y2="560" class="axis"/>
+    <text x="430" y="635" class="label">search budget and model complexity</text>
+    <text x="-105" y="260" class="label" transform="rotate(-90 -105,260)">solution quality</text>
+    <g>
+      <line x1="0" y1="460" x2="1180" y2="460" class="grid"/>
+      <line x1="0" y1="360" x2="1180" y2="360" class="grid"/>
+      <line x1="0" y1="260" x2="1180" y2="260" class="grid"/>
+      <line x1="0" y1="160" x2="1180" y2="160" class="grid"/>
+      <line x1="220" y1="0" x2="220" y2="560" class="grid"/>
+      <line x1="440" y1="0" x2="440" y2="560" class="grid"/>
+      <line x1="660" y1="0" x2="660" y2="560" class="grid"/>
+      <line x1="880" y1="0" x2="880" y2="560" class="grid"/>
+      <line x1="1100" y1="0" x2="1100" y2="560" class="grid"/>
+    </g>
+    <path d="M85 500 C260 420 360 405 500 330 C650 250 820 210 1080 120" fill="none" stroke="#38bdf8" stroke-width="6" stroke-linecap="round" filter="url(#glow)"/>
+    <circle cx="120" cy="485" r="15" fill="#94a3b8"/>
+    <text x="145" y="491" class="pointLabel">greedy</text>
+    <circle cx="315" cy="410" r="15" fill="#38bdf8"/>
+    <text x="340" y="416" class="pointLabel">package savings</text>
+    <circle cx="520" cy="322" r="15" fill="#22d3ee"/>
+    <text x="545" y="328" class="pointLabel">partition beam</text>
+    <circle cx="735" cy="245" r="15" fill="#f59e0b"/>
+    <text x="760" y="251" class="pointLabel">fanout beam</text>
+    <circle cx="980" cy="148" r="17" fill="#fb7185"/>
+    <text x="1008" y="154" class="pointLabel">agent loop + local exchange</text>
+    <rect x="760" y="420" width="340" height="92" rx="22" fill="#111827" stroke="#334155"/>
+    <text x="790" y="456" class="label">The controller spends time only</text>
+    <text x="790" y="484" class="label">where a strategy proves useful.</text>
+  </g>
+</svg>

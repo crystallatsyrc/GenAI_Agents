@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "AutoSolver Agent: Budgeted Strategy Search for Courier Assignment"
+authors:
+  - family-names: "Ansel"
+version: "0.1.0"
+date-released: "2026-06-04"
+url: "https://github.com/crystallatsyrc/AutoSolver-Agent"
+license: "MIT"

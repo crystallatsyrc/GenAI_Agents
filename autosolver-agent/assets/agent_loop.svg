@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="720" viewBox="0 0 1600 720">
+  <defs>
+    <linearGradient id="bg2" x1="0" x2="1">
+      <stop offset="0" stop-color="#0b1120"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="g1" x1="0" x2="1">
+      <stop offset="0" stop-color="#2dd4bf"/>
+      <stop offset="1" stop-color="#38bdf8"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0" x2="1">
+      <stop offset="0" stop-color="#f59e0b"/>
+      <stop offset="1" stop-color="#fb7185"/>
+    </linearGradient>
+    <style>
+      .title{font:700 46px Inter,Segoe UI,Arial,sans-serif;fill:#f8fafc}
+      .node{fill:#162033;stroke:#334155;stroke-width:2;rx:24}
+      .h{font:700 25px Inter,Segoe UI,Arial,sans-serif;fill:#ffffff}
+      .p{font:400 17px Inter,Segoe UI,Arial,sans-serif;fill:#b9c4d6}
+      .edge{stroke:#38bdf8;stroke-width:4;fill:none;stroke-linecap:round}
+    </style>
+    <marker id="arr" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto">
+      <path d="M0,0 L10,6 L0,12 Z" fill="#38bdf8"/>
+    </marker>
+  </defs>
+  <rect width="1600" height="720" fill="url(#bg2)"/>
+  <text x="90" y="86" class="title">The Inner Agent Loop</text>
+  <g transform="translate(100,160)">
+    <rect width="230" height="132" class="node"/>
+    <rect x="22" y="22" width="58" height="58" rx="16" fill="url(#g1)"/>
+    <text x="96" y="54" class="h">Profile</text>
+    <text x="96" y="86" class="p">case type</text>
+    <text x="96" y="111" class="p">density and variance</text>
+  </g>
+  <g transform="translate(410,160)">
+    <rect width="250" height="132" class="node"/>
+    <rect x="22" y="22" width="58" height="58" rx="16" fill="url(#g2)"/>
+    <text x="96" y="54" class="h">Schedule</text>
+    <text x="96" y="86" class="p">choose strategy order</text>
+    <text x="96" y="111" class="p">allocate soft budgets</text>
+  </g>
+  <g transform="translate(760,160)">
+    <rect width="255" height="132" class="node"/>
+    <rect x="22" y="22" width="58" height="58" rx="16" fill="url(#g1)"/>
+    <text x="96" y="54" class="h">Generate</text>
+    <text x="96" y="86" class="p">beam, greedy, repair</text>
+    <text x="96" y="111" class="p">fanout candidates</text>
+  </g>
+  <g transform="translate(1115,160)">
+    <rect width="260" height="132" class="node"/>
+    <rect x="22" y="22" width="58" height="58" rx="16" fill="url(#g2)"/>
+    <text x="96" y="54" class="h">Consider</text>
+    <text x="96" y="86" class="p">score candidate plan</text>
+    <text x="96" y="111" class="p">keep incumbent</text>
+  </g>
+  <g transform="translate(525,430)">
+    <rect width="300" height="132" class="node"/>
+    <rect x="22" y="22" width="58" height="58" rx="16" fill="url(#g1)"/>
+    <text x="96" y="54" class="h">Adapt</text>
+    <text x="96" y="86" class="p">if improved, search locally</text>
+    <text x="96" y="111" class="p">if stale, diversify</text>
+  </g>
+  <g transform="translate(965,430)">
+    <rect width="300" height="132" class="node"/>
+    <rect x="22" y="22" width="58" height="58" rx="16" fill="url(#g2)"/>
+    <text x="96" y="54" class="h">Emit</text>
+    <text x="96" y="86" class="p">deadline-safe output</text>
+    <text x="96" y="111" class="p">submission format</text>
+  </g>
+  <path d="M330 226 C360 226 380 226 410 226" class="edge" marker-end="url(#arr)"/>
+  <path d="M660 226 C700 226 720 226 760 226" class="edge" marker-end="url(#arr)"/>
+  <path d="M1015 226 C1050 226 1078 226 1115 226" class="edge" marker-end="url(#arr)"/>
+  <path d="M1245 292 C1200 375 1060 430 825 490" class="edge" marker-end="url(#arr)"/>
+  <path d="M675 430 C650 360 720 310 795 292" class="edge" marker-end="url(#arr)"/>
+  <path d="M825 496 C885 496 920 496 965 496" class="edge" marker-end="url(#arr)"/>
+</svg>
