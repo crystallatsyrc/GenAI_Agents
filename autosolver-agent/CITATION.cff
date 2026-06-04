@@ -5,5 +5,5 @@ authors:
   - family-names: "Ansel"
 version: "0.1.0"
 date-released: "2026-06-04"
-url: "https://github.com/crystallatsyrc/AutoSolver-Agent"
+url: "https://github.com/crystallatsyrc/GenAI_Agents/tree/main/autosolver-agent"
 license: "MIT"

@@ -120,7 +120,7 @@ If you reference this project, cite it as:
   title = {AutoSolver Agent: Budgeted Strategy Search for Courier Assignment},
   author = {Ansel},
   year = {2026},
-  url = {https://github.com/crystallatsyrc/AutoSolver-Agent}
+  url = {https://github.com/crystallatsyrc/GenAI_Agents/tree/main/autosolver-agent}
 }
 ```
 
